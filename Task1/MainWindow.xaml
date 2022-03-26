@@ -1,0 +1,153 @@
+﻿<Window x:Class="Task1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1200">
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <Paragraph FontWeight="Bold" FontSize="30">Цвет глаз</Paragraph>
+                <Paragraph>
+                    <Floater Width="300" HorizontalAlignment="Right">
+                        <BlockUIContainer>
+                            <Image Source="Data/eyes.jpg"/>
+                        </BlockUIContainer>
+                    </Floater>
+                    Цвет глаз — характеристика, определяемая пигментацией
+                    <Hyperlink NavigateUri="https://ru.wikipedia.org/wiki/Радужная_оболочка" Cursor="Hand">радужной оболочки</Hyperlink>.
+                </Paragraph>
+                <Paragraph FontWeight="Bold" FontSize="20">Определение</Paragraph>
+                <Paragraph>Радужная оболочка состоит из переднего — мезодермального, и заднего — эктодермального слоёв.
+                    Передний слой состоит из наружного пограничного отдела и стромы. В нём распределены хроматофоры, содержащие меланин.
+                    От характера распределения пигментов в этом слое и зависит цвет глаза. В заднем слое содержится много заполненных фусцином пигментных клеток.
+                    Независимо от цвета глаз, задний слой имеет тёмный цвет, исключение составляют только альбиносы.
+                    Кроме этого, роль играют сосуды и волокна радужной оболочки. Цвет глаз — характеристика, определяемая пигментацией радужной оболочки.
+                </Paragraph>
+                <Paragraph FontWeight="Bold" FontSize="20">Классификация</Paragraph>
+                <Paragraph>
+                    В антропологии существует несколько систем классификации цвета радужной оболочки. 
+                    В России более известна система В. В. Бунака, на Западе — система Мартина-Шульца.
+                </Paragraph>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn Width="*"/>
+                        <TableColumn Width="*"/>
+                    </Table.Columns>
+                    <TableRowGroup FontWeight="Bold">
+                        <TableRow>
+                            <TableCell FlowDirection="RightToLeft">
+                                <Paragraph TextAlignment="Center">Шкала Бунака</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph TextAlignment="Center">Шкала Мартина-Шульца</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <List MarkerStyle="Disc">
+                                    <ListItem>
+                                        <Paragraph>Тип 1.<Bold>Тёмный</Bold></Paragraph>
+                                        <List MarkerStyle="Disc">
+                                            <ListItem>
+                                                <Paragraph>Вариант 1. Чёрный.</Paragraph>
+                                            </ListItem>
+                                            <ListItem>
+                                                <Paragraph>Вариант 2. Тёмно-карий. Окраска равномерная.</Paragraph>
+                                            </ListItem>
+                                            <ListItem>
+                                                <Paragraph>Вариант 3. Светло-карий. Окраска неравномерная.</Paragraph>
+                                            </ListItem>
+                                            <ListItem>
+                                                <Paragraph>Вариант 4. Жёлтый. Очень редкий вариант.</Paragraph>
+                                            </ListItem>
+                                        </List>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Тип 2.<Bold>Переходный, смешанный</Bold></Paragraph>
+                                        <List MarkerStyle="Box">
+                                            <ListItem>
+                                                <Paragraph>Вариант 5. Буро-жёлто-зелёный.</Paragraph>
+                                            </ListItem>
+                                            <ListItem>
+                                                <Paragraph>Вариант 6. Зелёный.</Paragraph>
+                                            </ListItem>
+                                            <ListItem>
+                                                <Paragraph>Вариант 7. Серо-зелёный.</Paragraph>
+                                            </ListItem>
+                                            <ListItem>
+                                                <Paragraph>Вариант 8. Серый или голубой, вокруг зрачка — буро-жёлтое обрамление.</Paragraph>
+                                            </ListItem>
+                                        </List>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Тип 3.<Bold>Светлый</Bold></Paragraph>
+                                        <List MarkerStyle="Disc">
+                                            <ListItem>
+                                                <Paragraph>Вариант 9. Серый. Может быть разных оттенков.</Paragraph>
+                                            </ListItem>
+                                            <ListItem>
+                                                <Paragraph>Вариант 10. Серо-голубой. Окраска неравномерная.</Paragraph>
+                                            </ListItem>
+                                            <ListItem>
+                                                <Paragraph>Вариант 11. Голубой.</Paragraph>
+                                            </ListItem>
+                                            <ListItem>
+                                                <Paragraph>Вариант 12. Синий. Встречается редко.</Paragraph>
+                                            </ListItem>
+                                        </List>
+                                    </ListItem>
+                                </List>
+                            </TableCell>
+                            <TableCell>
+                                <List MarkerStyle="Disc">
+                                    <ListItem>
+                                        <Paragraph>1—2 — синий и голубой (1a, 1b, 1c, 2a — светлые оттенки, 2b — тёмный).</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>3 — серо-голубой.</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>4 — серый.</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>5 — серо-голубой с жёлто-коричневыми вкраплениями.</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>6 — серо-зелёный с жёлто-коричневыми вкраплениями.</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>7 — зелёный.</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>7 — зелёный.</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>8 — зелёный с жёлто-коричневыми вкраплениями.</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>9—11 — светло-коричневый.</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>10 — буро-зелёный или буро-серый.</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>12—13 — средний коричневый.</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>14—15—16 — тёмно-коричневый и чёрный.</Paragraph>
+                                    </ListItem>
+                                </List>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+                
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Window>
